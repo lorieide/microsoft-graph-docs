@@ -1,11 +1,11 @@
-# Relationship Mesh Template 
+# Relationship Mesh template 
 
 [Get Started](https://github.com/microsoft/Relationship-Mesh-Solution-Accelerator-with-MGDC-and-Azure-Synapse-Analytics)
  
-## Business Summary 
-Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Gaining insights into the strength of relationships with customers and their key contacts will enable your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
+## Business summary 
+Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Gaining insights into the strength of relationships with customers and their key contacts enables your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
 
-This template enables you to create a Relationship Mesh Solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
+This template enables you to create a Relationship Mesh solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
  
 ## Key use cases 
 - Integrate customer/seller relationship data from various systems together into a single view with actionable insights at the area and individual account level.  
@@ -17,9 +17,8 @@ This template enables you to create a Relationship Mesh Solution that shows how 
 - Establish a detailed view of relationship event tracking and a checklist to make it actionable.  
 
 ## MGDC data sets 
-- Outlook Emails **(BasicDataSet_v0.Message_v1)** 
-- Outlook Calendar **(BasicDataSet_v0.CalendarView_v0)** 
-
+- Outlook emails **(BasicDataSet_v0.Message_v1)** 
+- Outlook calendar events **(BasicDataSet_v0.CalendarView_v0)** 
 
 ## CRM data:  
 - Contacts 
@@ -27,12 +26,10 @@ This template enables you to create a Relationship Mesh Solution that shows how 
 - Opportunities  
 - Employees 
 
- 
-## PowerBI Dashboards 
-With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication and meeting data. This dashboard shows you a summary of all high priority accounts, their connectivity scores, it includes the accounts that need attention, the accounts in good standing and the shortest and longest gap since the last activity.
+## PowerBI dashboards 
+With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication, and meeting data. This dashboard shows you a summary of all high priority accounts and their connectivity scores. The dashboard also includes accounts that need attention, accounts in good standing, and the shortest and longest gaps since the last activity.
 
-With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication and meeting data. This dashboard shows you a summary of all high priority accounts, their connectivity scores, it includes the accounts that need attention, the accounts in good standing and the shortest and longest gap since the last activity.
 ![An image that shows the relationship mesh intro dashboard](images/data-connect-templates-mesh-intro.png)
 
-The **detail dashboard** includes actionable insights both at organizational level and at an individual account level, you can refine your search by the industries, sectors, sellers, tiers and transaction size, it will show you the network of sellers and external contacts, the top contacts at an account, the top relationship touchpoints , the interactions, an event tracker and the list of prospecting checklist. 
+The **Detail dashboard** includes actionable insights both at organizational level and at an individual account level, so you can refine your search by industries, sectors, sellers, tiers and transaction size. The dashboard also shows the network of sellers and external contacts, the top contacts at an account, the top relationship touchpoints, the interactions, an event tracker, and the list of prospecting checklist. 
 ![An image that shows the relationship mesh detail accounts dashboard](images/data-connect-templates-mesh-account.png)
