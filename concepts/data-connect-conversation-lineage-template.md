@@ -34,7 +34,7 @@ The **Dev 101** report helps you understand the emails sent by each department, 
 The **Mailing Management** report gives you a view of the top email senders and receivers, all the emails sent to managers and subordinates, and it displays how many emails are read and where the senders are located.  
 ![An image that shows the mailing management from the conversation lineage dashboard](images/data-connect-templates-mail-management.png)
 
-With the **Are mails actually read** report, you can understand the number of mails read by department, how many emails are read, if there are any pattern to emails not being read and the senders name and location. 
+With the **Are mails actually read** report, you can understand the number of mails read by department, how many emails are read, if there are any pattern to emails not being read and the sender's name and location. 
 ![An image that shows if emails are read from the conversation lineage dashboard](images/data-connect-templates-mails-read.png)
 
 With the **Who interacts with whom?** you can understand the interaction between teams and how frequently those interactions are occurring with each sender. 
