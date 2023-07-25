@@ -34,9 +34,9 @@ On the Overview page, you can:
 
 Each node is based on a person. If a node interacts with another node, then they become a connection. An interaction can be any of the following: 
 
-- One email with 5 or less recipients
-- One meeting of 5 or less attendee
-- Eight chat messages (each with 5 or less recipients)
+- One email with 5 or fewer recipients
+- One meeting of 5 or fewer attendees
+- Eight chat messages (each with 5 or fewer recipients)
  
 The blend of interactions is informed by investigations from Microsoft Research (MSR) using statistical insights from U.S.-based Microsoft employees. The two flags available to classify the nodes that can be configured using parameters include the following: 
 
@@ -65,7 +65,7 @@ Empower inclusive networks: Rank the nodes based on their number of connections 
 ![An image that shows the network size and breadth page of the organizational network analysis](images/data-connect-templates-network.png)
 
 **Bridging Analysis page**  
-Evaluate information flow: Measures the connectivity of nodes to detected graph communities. First, graph communities are discovered using label propagation algorithm (LPA). Then, counts how many communities a node is connected to and normalize by the total number of communities. A node connected to no communities is set to 0. A node connected to all communities is set to 1. 
+Evaluate information flow: Measures the connectivity of nodes to detected graph communities. First, graph communities are discovered using label propagation algorithm (LPA). Then, it counts how many communities a node is connected to and normalize by the total number of communities. A node connected to no communities is set to 0. A node connected to all communities is set to 1. 
 
 - Identify key bridges and their departments. 
 - Analyze the correlation of bridging and influence.
