@@ -96,12 +96,12 @@ The application supports searching in multiple domains, e.g., Software Engineeri
 For example, if a user searches using the term sensor with the 'Healthcare' domain enabled, the recommendations are as follows: 
 ![An image that shows how to search by skills inference](images/data-connect-templates-skills-inference.png)
 
-If a users does the same search, but this time with the 'Software Engineering' domain enabled, the skills inferred differ as shown in the image below. 
+If a user does the same search, but this time with the 'Software Engineering' domain enabled, the skills inferred differ as shown in the image below. 
 ![An image that shows the search differences using domain options](images/data-connect-templates-skills-differ.png)
 
 **Exporting search results**
 
-A user can explort the results of a search operation into a file with Excel or CVS format. To do this, the user must click on the highlighted *Export* link right under the search bar, as shown in the image below. Afterwards, a pop-up appears showing how to configure the file name, format, and number of results to export. Only the results pages retrieved so far are then exported as shown in the image below. 
+A user can explort the results of a search operation into a file with Excel or CSV format. To do this, the user must click on the highlighted *Export* link right under the search bar, as shown in the image below. Afterwards, a pop-up appears showing how to configure the file name, format, and number of results to export. Only the results pages retrieved so far are then exported as shown in the image below. 
 ![An image that shows how to export employee search results](images/data-connect-templates-skills-exporting.png)
 
 **Defining teams** 
@@ -126,5 +126,5 @@ To remove an employee from the team, hover over the wanted employee from the lis
 
 **Exporting team members** 
 
-Users can export team members into an Excel or csv file. To do this, users must click the *Export* button at the bottom of the team members list. A pop-up appears, enabling the users to configure the name and format of the file, as shown in the image below. 
+Users can export team members into an Excel or CSV file. To do this, users must click the *Export* button at the bottom of the team members list. A pop-up appears, enabling the users to configure the name and format of the file, as shown in the image below. 
 ![An image that shows how to export team members](images/data-connect-templates-skills-exporting-members.png)
