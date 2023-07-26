@@ -1,8 +1,13 @@
+---
+title: "Relationship Mesh template"
+description: "Learn how to use Microsoft Graph Data Connect to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
+
 # Relationship Mesh template 
 
-[Get Started](https://github.com/microsoft/Relationship-Mesh-Solution-Accelerator-with-MGDC-and-Azure-Synapse-Analytics)
- 
-## Business summary 
 Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Gaining insights into the strength of relationships with customers and their key contacts enables your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
 
 This template enables you to create a Relationship Mesh solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
@@ -16,7 +21,7 @@ This template enables you to create a Relationship Mesh solution that shows how 
 - Gain timely analytics and insights that help improve relationships between sellers with high priority accounts. 
 - Establish a detailed view of relationship event tracking and a checklist to make it actionable.  
 
-## MGDC data sets 
+## Microsoft Graph Data Connect data sets 
 - Outlook emails **(BasicDataSet_v0.Message_v1)** 
 - Outlook calendar events **(BasicDataSet_v0.CalendarView_v0)** 
 
