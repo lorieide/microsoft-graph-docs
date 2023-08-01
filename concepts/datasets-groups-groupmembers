@@ -1,0 +1,77 @@
+---
+title: "Dataset GroupMembers_v0"
+description: "GroupMembers_v0 dataset."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+ms.custom: datasets:dataset-name
+---
+
+# GroupMembers_v0 dataset
+
+## Description
+
+This dataset helps tenants get the list of direct members of all the groups. A group can have users, organizational contacts, devices, service principals and other groups as members. 
+  
+## Scenarios
+
+-	List the members of a group
+-	Determine whether a user is a member of a group
+
+## Questions
+
+-	How many members are part of a particular group?
+  
+## Joining with other datasets
+
+-	This dataset can be joined with GroupDetails_v0 dataset and GroupOwners_v0 dataset 
+  
+## Definitions
+
+-	Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
+-	Azure Active Directory (Azure AD) supports the following types of groups:
+  - Microsoft 365 groups
+  - Security groups
+  - Mail-enabled security groups
+  - Distribution groups
+-	Only Microsoft 365 and Security groups can be managed by the tenant users. Mail-enabled security groups and Distribution groups are read-only through Microsoft Graph.
+
+## Notes
+
+## Schema
+
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| id |	string |	The unique identifier for the members of the group. |	No |	None |
+| userPrincipalName |	string |	SMTP address of the members of the group. |	No |	None |
+| displayName |	string |	The display name for the members of the group. |	No |	None |
+| ODataType |	string |	Data type of the current folder. |	No |	None |
+| pObjectId |	string |	Object id. |	No |	None |
+| ptenant |	stringi	| Tenant id. |	No	| None |
+| pAdditionalInfo |	string |	Additional Information. |	No |	None |
+| datarow |	int64 |	Row of the data. |	No |	None |
+| userrow |	int64 |	Row of the user's data. |	No |	None |
+| pagerow |	int64 |	Page row of the user's data. |	No |	None |
+| rowinformation |	string |	Page row of the user's data. <br> *Format:* ARRAY<STRING>. | No |	None |
+
+## JSON representation
+
+```json
+{
+"id": "String (identifier)",
+"userPrincipalName": "String",
+"displayName": "String",
+"ODataType": "#microsoft.graph.user",
+"pObjectId": "String",
+"ptenant": "String (identifier)",
+"pAdditionalInfo": "String",
+"datarow": Int64,
+"userrow": Int64,
+"pagerow": Int64,
+"rowinformation": ["String"]
+}
+```
+
+## Sample 
+
+[GroupMembers_v0_sample.docx]()https://microsoftapc-my.sharepoint.com/:w:/r/personal/karannilakhe_microsoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BBC738CD3-2D04-453C-86D3-8775AD7AD9AC%7D&file=GroupMembers_v0_sample.docx&action=default&mobileredirect=true&DefaultItemOpen=1&share=IQHTjHO8BC08RYbTh3WtetmsAVobOsthReiV6a3psbexuvs&cid=36f78ffb-b697-456c-9f6c-99dfb79416bb
