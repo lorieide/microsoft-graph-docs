@@ -1,9 +1,15 @@
+---
+title: "Conversation Lineage template"
+description: "gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC)"
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
+
 # Conversation Lineage template
 
-[Get Started](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/conversation-lineage)
+Use the Conversation Lineage template to gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC).
 
-## Business summary 
-Use the Conversation Lineage template to gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC). 
 This template teaches you the key steps and Azure technologies required to build your own MGDC-based application. By extracting and processing Microsoft 365 data and runnning analytics using Azure Synapse Analytics, you can process both historical data and future data using Azure Synapse triggers. You can also extract sentiment and Natural Language Processing (NLP) entities from conversations using Azure Cognitive Services, enabling you to visualize key insights with PowerBI. 
 
 ## Key use cases 
