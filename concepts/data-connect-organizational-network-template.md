@@ -1,9 +1,12 @@
-# Organizational Network Analysis template 
+---
+title: "Microsoft Graph Data Connect policies and billing"
+description: "Enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
 
-[Get Started](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/ona)
-
-## Business summary 
-The purpose of ONA (Organizational Network Analysis) is to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change. This solution template enables customers to leverage ONA metrics from M365 data and analyze the networks within. 
+The purpose of ONA (Organizational Network Analysis) is to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change. This solution template enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within. 
 
 ## MGDC data sets 
 - Azure Active Directory users **(BasicDataSet_v0.User_v1)**
