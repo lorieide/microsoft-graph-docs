@@ -156,12 +156,12 @@ items:
           - name: Templates
             items:
               - name: Overview
-                href: data-connect-temnplates-overview.md
+                href: data-connect-templates-overview.md
               - name: Relationship Mesh 
                 href: data-connect-relationship-mesh-template.md
               - name: Conversation Lineage
                 href: data-connect-conversation-lineage-template.md
-              - name: Skills finder and Talent Alignment
+              - name: Skills Finder and Talent Alignment
                 href: data-connect-skills-finder-template.md
               - name: Organizational Network Analysis
                 href: data-connect-organizational-network-template.md
