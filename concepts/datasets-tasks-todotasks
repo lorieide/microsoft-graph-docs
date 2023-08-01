@@ -44,56 +44,56 @@ The **Todo Tasks_v0 dataset** allows you to get all the Tasks created by all the
 
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Id | String | The unique identifier of the task. | No | False | 
-| AssignedTo	| String | The name of the person who has been assigned the task. |	No | False |
-| Body	| String | The task body that typically contains information about the task. <br> *Format:* STRUCT<ContentType: STRING, Content: STRING>	| No  |	False |
-| Categories |	String |	The categories associated with the task. <br> *Format:* ARRAY<STRING> |	No | False |
-| ChangeKey	| String |	The version of the task. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.	| No | 	False |
-| CompletedDateTime |	Datetime |	The date in the specified time zone that the task was finished. |	No | False |
-| CreatedDateTime |	Datetime |	The date and time when the task was created. By default, it is in UTC. | Yes | True |
-| DueDateTime | Datetime | The date in the specified time zone that the task is to be finished. |	No | False |
-| HasAttachments | Boolean | Set to true if the task has attachments. |	No | False |
-| Importance |	String |	The importance of the event: Low, Normal, High. |	No | False |
-| IsReminderOn |	Boolean |	Set to true if an alert is set to remind the user of the task. |	No |	False |
-| LastModifiedDateTime |	Datetime |	The date and time when the task was last modified. By default, it is in UTC. |	Yes |	True |
-| Owner	| String |	The name of the person who created the task. |	No |	False |
-| ParentFolderId |	String |	The unique identifier for the task's parent folder. |	No | False |
-| Recurrence | String | The recurrence pattern for the task. <br> *Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>> |	No | False |
-| ReminderDateTime |	Datetime |	The date and time for a reminder alert of the task to occur. |	No | False |
-| Sensitivity	| String | Indicates the level of privacy for the event: Normal, Personal, Private, Confidential.	| No | False |
-| StartDateTime	| Datetime |	The date in the specified time zone when the task is to begin. |	No | False |
-| Status | String |	Indicates state or progress of the task: NotStarted, InProgress, Completed, WaitingOnOthers, Deferred. |	No |	False |
-| Subject	| String |	A brief description or title of the task.	| No | False |
-| Attachments	| String | The FileAttachment and ItemAttachment attachments for the message. Navigation property. <br> *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>	| No | False |
-| DataType	| String |	Data type of the current folder. |	No |	False |
-| puser	| String	| User id. |	No  | False |
-| ptenant	| String |  Tenant id. |	No | False |
+| id | string | The unique identifier of the task. | No | False | 
+| assignedTo	| string | The name of the person who has been assigned the task. |	No | False |
+| body	| String | The task body that typically contains information about the task. <br> *Format:* STRUCT<ContentType: STRING, Content: STRING>	| No  |	False |
+| categories |	string |	The categories associated with the task. <br> *Format:* ARRAY<STRING> |	No | False |
+| changeKey	| string |	The version of the task. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.	| No | 	False |
+| completedDateTime |	datetime |	The date in the specified time zone that the task was finished. |	No | False |
+| createdDateTime |	datetime |	The date and time when the task was created. By default, it is in UTC. | Yes | True |
+| dueDateTime | datetime | The date in the specified time zone that the task is to be finished. |	No | False |
+| hasAttachments | boolean | Set to true if the task has attachments. |	No | False |
+| importance |	string |	The importance of the event: Low, Normal, High. |	No | False |
+| isReminderOn |	boolean |	Set to true if an alert is set to remind the user of the task. |	No |	False |
+| lastModifiedDateTime |	datetime |	The date and time when the task was last modified. By default, it is in UTC. |	Yes |	True |
+| owner	| string |	The name of the person who created the task. |	No |	False |
+| parentFolderId |	string |	The unique identifier for the task's parent folder. |	No | False |
+| recurrence | string | The recurrence pattern for the task. <br> *Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>> |	No | False |
+| reminderDateTime |	datetime |	The date and time for a reminder alert of the task to occur. |	No | False |
+| sensitivity	| string | Indicates the level of privacy for the event: Normal, Personal, Private, Confidential.	| No | False |
+| startDateTime	| datetime |	The date in the specified time zone when the task is to begin. |	No | False |
+| status | string |	Indicates state or progress of the task: NotStarted, InProgress, Completed, WaitingOnOthers, Deferred. |	No |	False |
+| subject	| string |	A brief description or title of the task.	| No | False |
+| attachments	| atring | The FileAttachment and ItemAttachment attachments for the message. Navigation property. <br> *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>	| No | False |
+| ODataType	| string |	Data type of the current folder. |	No |	False |
+| puser	| string	| User id. |	No  | False |
+| ptenant	| string |  Tenant id. |	No | False |
 
 ## JSON representation
 
 ```msgraph-interactive
 {
-"Id": "String",
-"AssignedTo": "String",
-"Body": ["String"],
-"Categories": ["String"],
-"ChangeKey": "String",
-"CompletedDateTime": ["String"],
-"CreatedDateTime": "String (timestamp)",
-"DueDateTime": ["String"],
-"HasAttachments": true,
-"Importance": "String",
-"IsReminderOn": true,
-"LastModifiedDateTime": "String (timestamp)",
-"Owner": "String",
-"ParentFolderId": "String",
-"Recurrence": ["String"],
-"ReminderDateTime": ["String"],
-"Sensitivity": "String",
-"StartDateTime": ["String"],
-"Status": "String",
-"Subject": "String",
-"Attachments": ["String"],
+"id": "String",
+"assignedTo": "String",
+"body": ["String"],
+"categories": ["String"],
+"changeKey": "String",
+"completedDateTime": ["String"],
+"createdDateTime": "String (timestamp)",
+"dueDateTime": ["String"],
+"hasAttachments": true,
+"importance": "String",
+"isReminderOn": true,
+"lastModifiedDateTime": "String (timestamp)",
+"owner": "String",
+"parentFolderId": "String",
+"recurrence": ["String"],
+"reminderDateTime": ["String"],
+"sensitivity": "String",
+"startDateTime": ["String"],
+"status": "String",
+"subject": "String",
+"attachments": ["String"],
 "ODataType": "#Microsoft.OutlookServices.Task",
 "puser": "String (identifier)",
 "ptenant": "String (identifier)"
