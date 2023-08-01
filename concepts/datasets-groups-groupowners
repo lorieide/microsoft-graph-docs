@@ -1,0 +1,77 @@
+---
+title: "Dataset: GroupOwners_v0"
+description: "GroupOwners_v0 dataset."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+ms.custom: datasets:dataset-name
+---
+
+# GroupOwners_v0 dataset
+
+## Description
+
+This dataset helps retrieve the list of all the group owners. The owners are a set of users or service principals who are allowed to modify the group object. Owners are currently not available in Microsoft Graph for groups that were created in Exchange or groups that are synchronized from an on-premises environment.
+  
+## Scenarios
+
+-	Get the list of all the group owners to generate and analyze group related insights
+
+## Questions
+
+-	Which all users of the tenant are group owners?
+-	How many group owners are there in a tenant?
+
+## Joining with other datasets
+  
+-	This dataset can be joined with GroupDetails_v0 dataset and GroupMembers_v0 dataset.
+  
+## Definitions
+
+-	Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
+-	Azure Active Directory (Azure AD) supports the following types of groups:
+  - Microsoft 365 groups
+  - Security groups
+  - Mail-enabled security groups
+  - Distribution groups
+-	Only Microsoft 365 and Security groups can be managed by the tenant users. Mail-enabled security groups and distribution groups are read-only through Microsoft Graph.
+  
+## Notes
+
+## Schema
+
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| id |	string |	The unique identifier for the owner of the group. |	No |	None |
+| userPrincipalName |	string |	SMTP address of the owner of the group. |	No |	None |
+| displayName |	string |	The display name for the owner of the group. |	No |	None |
+| ODataType |	string |	Data type of the current folder. |	No |	None |
+| pObjectId |	string |	Object id. |	No |	None |
+| ptenant |	string |	Tenant id. |	No |	None |
+| pAdditionalInfo |	string |	Additional information. |	No |	None |
+| datarow |	int64 |	Row of the data. |	No |	None |
+| userrow |	int64 |	Row of the user's data. |	No |	None |
+| pagerow |	int64 |	Page row of the user's data. |	No |	None |
+| rowinformation |	string |	Page row of the user's data. <br> *Format:* ARRAY<STRING>. |	No |	None |
+
+## JSON representation
+
+```json
+{
+"id": "String (identifier)",
+"userPrincipalName": "String",
+"displayName": "String",
+"ODataType": "#microsoft.graph.user",
+"pObjectId": "String",
+"ptenant": "String (identifier)",
+"pAdditionalInfo": "String",
+"datarow": Int64,
+"userrow": Int64,
+"pagerow": Int64,
+"rowinformation": ["String"]
+}
+```
+  
+## Sample 
+
+[GroupOwners_v0_sample](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EcQSL2iF0opNoczYWYvaCtMB7-DH2JjsoxiXgN4KdB3u1A?e=PSxQn9)
