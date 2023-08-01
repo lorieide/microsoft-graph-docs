@@ -80,7 +80,7 @@ GroupDetails_v0 represents the Azure Active Directory (Azure AD) groups data for
 | securityIdentifier |	string |	Security identifier for the group. |	No |	None |
 | theme | string |	Specifies a Microsoft 365 group color theme. |	No |	None |
 | visibility |	string |	Specifies the group join policy and content visibility for the group. |	No	| None |
-| DataType |	string |  Data type of the current folder. |	No	| None |
+| ODataType |	string |  Data type of the current folder. |	No	| None |
 | pObjectId |	string |  Object id. |	No |	None |
 | ptenant |	string |  	Tenant id. |	No |	None |
 | pAdditionalInfo |	string |  Additional information. |	No	| None |
