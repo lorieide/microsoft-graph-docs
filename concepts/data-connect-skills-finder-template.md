@@ -1,8 +1,13 @@
-# Skills Finder and Talent Alignment template 
+---
+title: "Microsoft Graph Data Connect policies and billing"
+description: "Allows engagement managers to build the best suited teams for projects."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
 
-[Get Started](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/projectstaffing)
- 
-## Business summary 
+# Skills Finder and Talent Alignment Template
+
 The Skills Finder and Talent Alignment application is a Microsoft Graph Data Connect (MGDC) based solution that allows engagement managers to build the best suited teams for projects, by finding employees that are available who have the best set of skills for the project, as well as the most relevant set of potential skills. 
  
 The application processes employee profile and email data from Microsoft Graph Data Connect and complementary data sources using Azure Data Factory (ADF). It uses this data to build a model based on given queries that contain desired skills or topics of interest, as the most relevant employees are recommended. For each employee, the template provides information from employee profiles, along with inferred information about employees' potential skills, topics of interest, and roles. 
