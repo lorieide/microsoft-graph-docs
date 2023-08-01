@@ -1,6 +1,6 @@
 ---
-title: "Dataset: TodoTasks_v0"
-description: "One Sentence Description."
+title: "Dataset: DirectReport_v0"
+description: "DirectReport_v0 dataset."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -9,18 +9,15 @@ ms.custom: datasets:dataset-name
 
 # Todo Tasks_v0 dataset
 
+- TBD
+
 ## Description
 
-You can use a Task in Outlook to track a user level work item. Users can note its start, due, or actual completion dates, its progress or status, or whether it's recurring or requires reminding. Tasks are organized in [task folders](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/complex-types-for-mail-contacts-calendar#TaskFolderResource), which are in turn organized in [task groups](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/complex-types-for-mail-contacts-calendar#TaskGroupResource). Each mailbox has a default task folder (with the **Name** property Tasks) and a default task group (**Name** property My Tasks). 
-
-The **Todo Tasks_v0 dataset** allows you to get all the Tasks created by all the users of a tenant that are secured by Azure Active Directory in Office 365. User accounts can be on Office 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com, and Passport.com.
+- TBD
 
 ## Scenarios
 
--	Analyzing the number of Tasks created by all users and how many of these tasks got completed before the assigned due dates; how many tasks got completed after the assigned due dates.
--	Identifying stale tasks for notifying respective users to complete their tasks before the due date.
--	Identifying users who have incomplete tasks beyond a particular threshold.
--	Identifying tasks assigned to users where the status remains unchanged beyond a particular threshold.
+- TBD
 
 ## Questions
 
@@ -28,13 +25,11 @@ The **Todo Tasks_v0 dataset** allows you to get all the Tasks created by all the
 
 ## Joining with other datasets
 
--	This dataset can be joined with other user datasets using the unique identifiers to analyze the tasks data and derive behavioral insights. 
+- TBD
 
 ## Definitions
 
--	**Task**: An Outlook item that can track a work item. Users can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires a reminder.
--	**Task folder**: A folder that contains tasks. In Outlook, the default task group, My Tasks, contains a default task folder, Tasks, for the user's mailbox. Users cannot rename or delete these default task groups and folders, but users can create additional task groups and task folders.
--	**Task group**: A group of folders that contain tasks. In Outlook, there is a default task group, My Tasks, which you cannot rename or delete. However, you can create additional task groups.
+- TBD
 
 ## Notes
 
@@ -45,61 +40,100 @@ The **Todo Tasks_v0 dataset** allows you to get all the Tasks created by all the
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Id | String | The unique identifier of the task. | No | False | 
-| AssignedTo	| String | The name of the person who has been assigned the task. |	No | False |
-| Body	| String | The task body that typically contains information about the task. <br> *Format:* STRUCT<ContentType: STRING, Content: STRING>	| No  |	False |
-| Categories |	String |	The categories associated with the task. <br> *Format:* ARRAY<STRING> |	No | False |
-| ChangeKey	| String |	The version of the task. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.	| No | 	False |
-| CompletedDateTime |	Datetime |	The date in the specified time zone that the task was finished. |	No | False |
-| CreatedDateTime |	Datetime |	The date and time when the task was created. By default, it is in UTC. | Yes | True |
-| DueDateTime | Datetime | The date in the specified time zone that the task is to be finished. |	No | False |
-| HasAttachments | Boolean | Set to true if the task has attachments. |	No | False |
-| Importance |	String |	The importance of the event: Low, Normal, High. |	No | False |
-| IsReminderOn |	Boolean |	Set to true if an alert is set to remind the user of the task. |	No |	False |
-| LastModifiedDateTime |	Datetime |	The date and time when the task was last modified. By default, it is in UTC. |	Yes |	True |
-| Owner	| String |	The name of the person who created the task. |	No |	False |
-| ParentFolderId |	String |	The unique identifier for the task's parent folder. |	No | False |
-| Recurrence | String | The recurrence pattern for the task. <br> *Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>> |	No | False |
-| ReminderDateTime |	Datetime |	The date and time for a reminder alert of the task to occur. |	No | False |
-| Sensitivity	| String | Indicates the level of privacy for the event: Normal, Personal, Private, Confidential.	| No | False |
-| StartDateTime	| Datetime |	The date in the specified time zone when the task is to begin. |	No | False |
-| Status | String |	Indicates state or progress of the task: NotStarted, InProgress, Completed, WaitingOnOthers, Deferred. |	No |	False |
-| Subject	| String |	A brief description or title of the task.	| No | False |
-| Attachments	| String | The FileAttachment and ItemAttachment attachments for the message. Navigation property. <br> *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>	| No | False |
-| DataType	| String |	Data type of the current folder. |	No |	False |
-| puser	| String	| User id. |	No  | False |
-| ptenant	| String |  Tenant id. |	No | False |
+| accountEnabled	| boolean |	True if the account is enabled; otherwise, false.	| No |	None |
+| ageGroup	| string	| Sets the age group of the user. Allowed values: null, minor, notAdult and adult.	| No |	None |
+| assignedLicenses |	string |	The licenses that are assigned to the direct report. <br> *Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>> |	No	| None |
+| assignedPlans	| string |	The plans that are assigned to the direct report. <br> *Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>	| No |	None |
+| businessPhones |	string |	The telephone numbers of the direct report. *NOTE:* Although this is a string collection, only one number can be set for this property. <br> *Format:* ARRAY<STRING> |	No |	None |
+| city	| string |	The city in which the direct report is located. |	No |	None |
+| companyName	| string |	The company name which the direct report is associated. |	No |	None |
+| consentProvidedForMinor |	string | Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. |	No |	None |
+| country |	string |	The country or region in which the direct report is located; for example, "US" or "UK". |	No |	None |
+| createdDateTime |	datetime |	The created date of the user object.	| No |	None |
+| department |	string |	The name for the department in which the direct report works. |	No |	None |
+| displayName |	string |	The name displayed in the address book for the direct report. This is usually the combination of the user's first name, middle initial and last name.	| No |	None |
+| givenName |	string |	The given name (first name) of the direct report. |	No |	None |
+| id |	string |	The unique identifier for the direct report. Inherited from directoryObject. |	No |	None |
+| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the direct report. <br> *Format:* ARRAY<STRING> |	No |	None |
+| jobTitle |	string |	The direct report’s job title. |	No	| None |
+| legalAgeGroupClassification |	string |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. |	No |	None |
+| mail |	string |	The SMTP address for the direct report. |	No |	None |
+| mailNickname |	string |	The mail alias for the direct report. |	No |	None |
+| mobilePhone |	string	| The primary cellular telephone number for the direct report. |	No |	None |
+| officeLocation |	string |	The office location in the direct report's place of business.	| No |	None |
+| onPremisesImmutableId |	string |	This property is used to associate an on-premises Active Directory user account to their Azure AD user object. |	No |	None |
+| onPremisesLastSyncDateTime |	datetime |	Indicates the last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |	No |	None |
+| onPremisesSecurityIdentifier |	string |	Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. |	No |	None |
+| onPremisesSyncEnabled |	boolean |	True if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).	| No |	None |
+| passwordPolicies |	string |	Specifies password policies for the direct report. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together. |	No |	None |
+| postalCode |	string |	The postal code for the direct report's postal address. The postal code is specific to the direct report's country/region. In the United States of America, this attribute contains the ZIP code. |	No |	None |
+| preferredLanguage |	string |	The preferred language for the direct report. Should follow ISO 639-1 Code; for example "en-US". |	No |	None |
+| provisionedPlans |	string | The plans that are provisioned for the direct report. Read-only. Not nullable. <br> *Format:* ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>> |	No |	None |
+| proxyAddresses |	string | The proxy for the direct report's address. <br>	*Format:* ARRAY<STRING> |	No |	None |
+| state	| string |	The state or province in the direct report's address. |	No |	None |
+| streetAddress |	string |	The street address of the direct report's place of business. |	No |	None |
+| surname |	string |	The direct report's surname (family name or last name). |	No	| None |
+| usageLocation |	string |	A two-letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. Examples include: "US", "JP", and "GB". Not nullable. |	No |	None |
+| userPrincipalName |	string |	The user principal name (UPN) of the direct report. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.	| No |	None |
+| userType |	string |	A string value that can be used to classify user types in your directory, such as "member" and "guest".	| No |	None |
+| puser |	string |	User id |	No |  None |
+| ptenant	| string | 	Tenant id |	No | 	None |
+| pAdditionalInfo |	string | 	Additional information |	No | None |
+| datarow	| int64	| Row of the data. |	No  | None |
+| userrow	| int64	| Row of the user's data. |	No | 	None |
+| pagerow	| int64	| Page row of the user's data. |	No  |	None |
+| rowinformation |	string  |	Page row of the user's data. <br> *Format:* ARRAY<STRING>. | No | None |
 
 ## JSON representation
 
-```msgraph-interactive
 {
-"Id": "String",
-"AssignedTo": "String",
-"Body": ["String"],
-"Categories": ["String"],
-"ChangeKey": "String",
-"CompletedDateTime": ["String"],
-"CreatedDateTime": "String (timestamp)",
-"DueDateTime": ["String"],
-"HasAttachments": true,
-"Importance": "String",
-"IsReminderOn": true,
-"LastModifiedDateTime": "String (timestamp)",
-"Owner": "String",
-"ParentFolderId": "String",
-"Recurrence": ["String"],
-"ReminderDateTime": ["String"],
-"Sensitivity": "String",
-"StartDateTime": ["String"],
-"Status": "String",
-"Subject": "String",
-"Attachments": ["String"],
-"ODataType": "#Microsoft.OutlookServices.Task",
-"puser": "String (identifier)",
-"ptenant": "String (identifier)"
-}
+  "accountEnabled": true, 
+  "ageGroup": "String", 
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}], 
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}], 
+  "businessPhones": ["String"], 
+  "city": "String",  
+  "companyName": "String",  
+  "consentProvidedForMinor": "String",
+  "country": "String", 
+  "createdDateTime": "String (timestamp)", 
+  "department": "String",
+  "displayName": "String",
+  "givenName": "String", 
+  "id": "String (identifier)",
+  "imAddresses": ["String"],
+  "jobTitle": "String", 
+  "legalAgeGroupClassification": "String",
+  "mail": "String",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "officeLocation": "String",
+  "onPremisesImmutableId": "String",
+  "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesSecurityIdentifier": "String", 
+  "onPremisesSyncEnabled": true,
+  "passwordPolicies": "String",
+  "postalCode": "String",   
+  "preferredLanguage": "String",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}], 
+  "proxyAddresses": ["String"],
+  "state": "String", 
+  "streetAddress": "String", 
+  "surname": "String", 
+  "usageLocation": "String",   
+  "userPrincipalName": "String", 
+  "userType": "String", 
+  "puser": "String (identifier)", 
+  "ptenant": "String (identifier)", 
+  "pAdditionalInfo": "String", 
+  "datarow": Int64, 
+  "userrow": Int64, 
+  "pagerow": Int64, 
+  "rowinformation": ["String"]
+{
+
 ```
 ## Sample 
 
-[TodoTasks_v0_sample](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EdUh0vFk3_hPnpiImSWzmogBgfBJ7mbRU2NcWt7scKVhTg?e=LtasPT)
+[DirectReport_v0_sample](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EVtdxdp-PQFKuxHGutPlHsIBIpvKRSgWXaAWYPjOwkavEQ?e=sGP4Hi)
 
