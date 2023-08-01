@@ -1,8 +1,13 @@
+---
+title: "Relationship Mesh Template"
+description: "Enable your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
+
 # Relationship Mesh Template 
 
-[Get Started](https://github.com/microsoft/Relationship-Mesh-Solution-Accelerator-with-MGDC-and-Azure-Synapse-Analytics)
- 
-## Business Summary 
 Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Gaining insights into the strength of relationships with customers and their key contacts will enable your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
 
 This template enables you to create a Relationship Mesh Solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
