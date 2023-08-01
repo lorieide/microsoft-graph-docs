@@ -1,6 +1,6 @@
 ---
 title: "Conversation Lineage template"
-description: "gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC)"
+description: "Gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC)."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
