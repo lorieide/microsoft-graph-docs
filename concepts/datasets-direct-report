@@ -1,0 +1,105 @@
+---
+title: "Dataset: TodoTasks_v0"
+description: "One Sentence Description."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+ms.custom: datasets:dataset-name
+---
+
+# Todo Tasks_v0 dataset
+
+## Description
+
+You can use a Task in Outlook to track a user level work item. Users can note its start, due, or actual completion dates, its progress or status, or whether it's recurring or requires reminding. Tasks are organized in [task folders](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/complex-types-for-mail-contacts-calendar#TaskFolderResource), which are in turn organized in [task groups](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/complex-types-for-mail-contacts-calendar#TaskGroupResource). Each mailbox has a default task folder (with the **Name** property Tasks) and a default task group (**Name** property My Tasks). 
+
+The **Todo Tasks_v0 dataset** allows you to get all the Tasks created by all the users of a tenant that are secured by Azure Active Directory in Office 365. User accounts can be on Office 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com, and Passport.com.
+
+## Scenarios
+
+-	Analyzing the number of Tasks created by all users and how many of these tasks got completed before the assigned due dates; how many tasks got completed after the assigned due dates.
+-	Identifying stale tasks for notifying respective users to complete their tasks before the due date.
+-	Identifying users who have incomplete tasks beyond a particular threshold.
+-	Identifying tasks assigned to users where the status remains unchanged beyond a particular threshold.
+
+## Questions
+
+- TBD
+
+## Joining with other datasets
+
+-	This dataset can be joined with other user datasets using the unique identifiers to analyze the tasks data and derive behavioral insights. 
+
+## Definitions
+
+-	**Task**: An Outlook item that can track a work item. Users can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires a reminder.
+-	**Task folder**: A folder that contains tasks. In Outlook, the default task group, My Tasks, contains a default task folder, Tasks, for the user's mailbox. Users cannot rename or delete these default task groups and folders, but users can create additional task groups and task folders.
+-	**Task group**: A group of folders that contain tasks. In Outlook, there is a default task group, My Tasks, which you cannot rename or delete. However, you can create additional task groups.
+
+## Notes
+
+- TBD
+
+## Schema
+
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| Id | String | The unique identifier of the task. | No | False | 
+| AssignedTo	| String | The name of the person who has been assigned the task. |	No | False |
+| Body	| String | The task body that typically contains information about the task. <br> *Format:* STRUCT<ContentType: STRING, Content: STRING>	| No  |	False |
+| Categories |	String |	The categories associated with the task. <br> *Format:* ARRAY<STRING> |	No | False |
+| ChangeKey	| String |	The version of the task. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.	| No | 	False |
+| CompletedDateTime |	Datetime |	The date in the specified time zone that the task was finished. |	No | False |
+| CreatedDateTime |	Datetime |	The date and time when the task was created. By default, it is in UTC. | Yes | True |
+| DueDateTime | Datetime | The date in the specified time zone that the task is to be finished. |	No | False |
+| HasAttachments | Boolean | Set to true if the task has attachments. |	No | False |
+| Importance |	String |	The importance of the event: Low, Normal, High. |	No | False |
+| IsReminderOn |	Boolean |	Set to true if an alert is set to remind the user of the task. |	No |	False |
+| LastModifiedDateTime |	Datetime |	The date and time when the task was last modified. By default, it is in UTC. |	Yes |	True |
+| Owner	| String |	The name of the person who created the task. |	No |	False |
+| ParentFolderId |	String |	The unique identifier for the task's parent folder. |	No | False |
+| Recurrence | String | The recurrence pattern for the task. <br> *Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>> |	No | False |
+| ReminderDateTime |	Datetime |	The date and time for a reminder alert of the task to occur. |	No | False |
+| Sensitivity	| String | Indicates the level of privacy for the event: Normal, Personal, Private, Confidential.	| No | False |
+| StartDateTime	| Datetime |	The date in the specified time zone when the task is to begin. |	No | False |
+| Status | String |	Indicates state or progress of the task: NotStarted, InProgress, Completed, WaitingOnOthers, Deferred. |	No |	False |
+| Subject	| String |	A brief description or title of the task.	| No | False |
+| Attachments	| String | The FileAttachment and ItemAttachment attachments for the message. Navigation property. <br> *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>	| No | False |
+| DataType	| String |	Data type of the current folder. |	No |	False |
+| puser	| String	| User id. |	No  | False |
+| ptenant	| String |  Tenant id. |	No | False |
+
+## JSON representation
+
+```msgraph-interactive
+{
+"Id": "String",
+"AssignedTo": "String",
+"Body": ["String"],
+"Categories": ["String"],
+"ChangeKey": "String",
+"CompletedDateTime": ["String"],
+"CreatedDateTime": "String (timestamp)",
+"DueDateTime": ["String"],
+"HasAttachments": true,
+"Importance": "String",
+"IsReminderOn": true,
+"LastModifiedDateTime": "String (timestamp)",
+"Owner": "String",
+"ParentFolderId": "String",
+"Recurrence": ["String"],
+"ReminderDateTime": ["String"],
+"Sensitivity": "String",
+"StartDateTime": ["String"],
+"Status": "String",
+"Subject": "String",
+"Attachments": ["String"],
+"ODataType": "#Microsoft.OutlookServices.Task",
+"puser": "String (identifier)",
+"ptenant": "String (identifier)"
+}
+```
+## Sample 
+
+[TodoTasks_v0_sample](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EdUh0vFk3_hPnpiImSWzmogBgfBJ7mbRU2NcWt7scKVhTg?e=LtasPT)
+
