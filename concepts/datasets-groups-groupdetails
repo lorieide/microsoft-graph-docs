@@ -1,0 +1,135 @@
+---
+title: "Dataset GroupDetails_v0"
+description: "GroupDetails_v0 dataset."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+ms.custom: datasets:dataset-name
+---
+
+# GroupDetails_v0 dataset
+
+## Description
+
+GroupDetails_v0 represents the Azure Active Directory (Azure AD) groups data for a tenant, which can be a Microsoft 365 group, or a security group. 
+  
+## Scenarios
+
+-	Analytics on groups created by all the users based on creation date, etc.
+-	Analyzing groups that got expired or deleted in a particular time span.
+-	Accessing display names of all the Groups existing for a tenant.
+-	Access all the groups marked as sensitive.
+-	Understand geographic location preferences set for storing Group’s data such as – Emails, Files, etc.
+
+## Questions
+
+-	How many groups were created for the tenant in a time range?
+-	What are the unique types of groups that were created?
+-	Which of the existing groups are marked as sensitive?
+-	Which groups have set their preferred language as English?
+-	How many groups have enabled on premises sync?
+-	What was the last synced date time of all the groups for the tenant?
+-	Which groups got deleted in a time range?
+-	Which groups have set geo-location preference as Europe for group data storage?
+-	When was a user added as a group member?
+-	When did a user leave as a group member?
+
+## Joining with other datasets
+
+-	This dataset can be joined with GroupOwners_v0 dataset and GroupMembers_v0 dataset. 
+  
+## Definitions
+
+-	Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps users avoid working with individual principals and simplifies management of access to user resources.
+-	Azure Active Directory (Azure AD) supports the following types of groups.
+  - Microsoft 365 groups
+  - Security groups
+  - Mail-enabled security groups
+  - Distribution groups
+-	Only Microsoft 365 and Security groups can be managed by the tenant users. Mail-enabled security groups and Distribution groups are read-only through Microsoft Graph.
+
+## Notes
+
+## Schema
+
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| id | string	| Unique directory ID for the group in AAD. |	No |	None |
+| deletedDateTime |	datetime |	Timestamp in UTC when group was deleted. “null” if group is active. |	No |	None |
+| classification |	string |	Defines the group sensitivity classification selected. |	No |	None |
+| createdDateTime |	datetime |	Timestamp in UTC when the group was created. |	No |	None |
+| description	| string |	User specified description for the group. |	No |	None |
+| displayName |	string |	The display name for the group. |	No |	None |
+| expirationDateTime |	datetime |	Timestamp in UTC when group is set to expire. |	No |	None |
+| groupTypes |	string |	Specified type of group and membership. |	No |	None |
+| isAssignableToRole |	boolean |	Indicates if group can have AAD role assigned. |	No |	None |
+| mail |	string |	SMTP address of the group. |	No |	None |
+| mailEnabled |	boolean |	Specifies if Group is mail enabled. |	No |	None |
+| mailNickname |	string |	Mail alias for the group unique to tenant. |	No |	None |
+| membershipRule |	string |	The rule determines if membership is dynamic. |	No |	None |
+| membershipRuleProcessingState |	string |	Determines if dynamic membership is on or paused. Null is not set. |	No |	None |
+| onPremisesDomainName |	string |	Domain name for onpremise AD groups. |	No |	None |
+| onPremisesLastSyncDateTime |	datetime |	Timestamp for last sync of onpremise AD groups. |	No |	None |
+| onPremisesSyncEnabled |	boolean |	True if synced from onpremise AD. Null if not synced from AD. False if used to not anymore. |	No |	None |
+| preferredDataLocation |	string |	Physical geographic location for the group data storage like emails, files, chat, etc. |	No |	None |
+| preferredLanguage |	string |	Preferred language set for the group. |	No |	None |
+| proxyAddresses |	string |	Email addresses that direct to the same group mailboxes as this group. |	No |	None |
+| renewedDateTime |	datetime |	Timestamp in UTC when group was last renewed. |	No |	None |
+| resourceProvisioningOptions |	string |	Specifies the group resources that are provisioned as part of M365 Group creation. Possible value is \"Team\"."	| No |	None |
+| securityEnabled |	boolean |	Specifies if the group is a security group.	| No |	None |
+| securityIdentifier |	string |	Security identifier for the group. |	No |	None |
+| theme | string |	Specifies a Microsoft 365 group color theme. |	No |	None |
+| visibility |	string |	Specifies the group join policy and content visibility for the group. |	No	| None |
+| DataType |	string |  Data type of the current folder. |	No	| None |
+| pObjectId |	string |  Object id. |	No |	None |
+| ptenant |	string |  	Tenant id. |	No |	None |
+| pAdditionalInfo |	string |  Additional information. |	No	| None |
+| datarow | int64 |	Row of the data. |	No |	None |
+| userrow |	int64 |	Row of the user's data. | No |	None |
+| pagerow |	int64 |	Page row of the user's data. |	No |	None |
+| rowinformation |	string |  Page row of the user's data. <br> *Format:* ARRAY<STRING>. |	No |	None |
+
+## JSON representation
+
+```json
+{
+"id": "String (identifier)",
+"deletedDateTime": "String (timestamp)",
+"classification": "String",
+"createdDateTime": "String (timestamp)",
+"description": "String",
+"displayName": "String",
+"expirationDateTime": "String (timestamp)",
+"groupTypes": ["String"],
+"isAssignableRole": false,
+"mail": "String",
+"mailEnabled": true,
+"mailNickname": "String",
+"membershipRule": "String",
+"membershipRuleProcessingState": "String",
+"onPremisesLastSyncDateTime": "String (timestamp)",
+"onPremisesDomainName": "String"
+"onPremisesSyncEnabled": true,
+"preferredDataLocation": "String",
+"preferredLanguage": "String",
+"proxyAddresses": ["String"],
+"renewedDateTime": "String (timestamp)",
+"resourceProvisioningOptions": ["String"],
+"securityEnabled": true,
+"securityIdentifier": "String",
+"theme": "String",
+"visibility": "String",
+"ODataType": "#microsoft.graph.group",
+"pObjectId": "String",
+"ptenant": "String (identifier)",
+"pAdditionalInfo": "String",
+"datarow": Int64,
+"userrow": Int64,
+"pagerow": Int64,
+"rowinformation": ["String"]
+}
+```
+
+## Sample 
+
+[GroupDetails_v0_sample.docx](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EQnrJi-XNQFAqdLpgzmVtj0BKH-6tKxf0OwppOEwpJ-s4A?e=XLfxYH)
