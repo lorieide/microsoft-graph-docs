@@ -1,9 +1,13 @@
+---
+title: "Conversation Lineage template"
+description: "Validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
+
 # Information Oversharing template 
 
-[Get Started](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/information-oversharing)
- 
-
-## Business summary 
 Information oversharing is a security and compliance use case powered by our newly available SharePoint datasets. This template helps you validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent. 
 
 ## Key use cases 
