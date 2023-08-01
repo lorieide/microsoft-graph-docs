@@ -39,7 +39,6 @@ ms.custom: datasets:dataset-name
 
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Id | String | The unique identifier of the task. | No | False | 
 | accountEnabled	| boolean |	True if the account is enabled; otherwise, false.	| No |	None |
 | ageGroup	| string	| Sets the age group of the user. Allowed values: null, minor, notAdult and adult.	| No |	None |
 | assignedLicenses |	string |	The licenses that are assigned to the direct report. <br> *Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>> |	No	| None |
