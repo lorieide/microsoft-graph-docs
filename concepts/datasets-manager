@@ -1,0 +1,136 @@
+---
+title: "Dataset: Manager_v0"
+description: "Manager_v0 dataset."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+ms.custom: datasets:dataset-name
+---
+
+# Manager_v0 dataset
+
+## Description
+
+- TBD
+
+## Scenarios
+
+- TBD
+
+## Questions
+
+- TBD
+
+## Joining with other datasets
+  
+- TBD
+  
+## Definitions
+
+- TBD
+
+## Notes
+
+- TBD
+
+## Schema
+  
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| accountEnabled |	boolean |	True if the account is enabled; otherwise, false. |	No |	None |
+| ageGroup |	string |	Sets the age group of the user. Allowed values: null, minor, notAdult and adult. |	No |	None |
+| assignedLicenses |	string |	The licenses that are assigned to the manager. <br> *Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>. |	No |	None |
+| assignedPlans |	string |	The plans that are assigned to the manager. <br> *Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>. |	No |	None |
+| businessPhones |	string |	The telephone numbers for the manager. *Note:* Although this is a string collection, only one number can be set for this property. <br> *Format:* ARRAY<STRING>. |	No |	None |
+| city |	string |	The city in which the manager is located. |	No |	None |
+| companyName |	string |	The company name which the manager is associated. |	No |	None |
+| consentProvidedForMinor |	string |	Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired.	No |	None |
+| country |	string | The country or region in which the manager is located; for example, "US" or "UK". |	No |	None |
+| createdDateTime |	datetime |	The created date of the user object. |	No |	None |
+| department	| string |	The name for the department in which the manager works. |	No |	None |
+| displayName |	string |	The name displayed in the address book for the manager. This is usually the combination of the manager's first name, middle initial and last name. |	No |	None | 
+| givenName |	string |	The given name (first name) of the manager. |	No |	None |
+| id |	string |	The unique identifier for the manager. Inherited from directoryObject. |	No |	None |
+| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the manager. <br> *Format:* ARRAY<STRING>. |	No |	None |
+| jobTitle |	string |	The manager’s job title. |	No |	None |
+| legalAgeGroupClassification	| string |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. | No |	None |
+| mail |	string |	The SMTP address for the manager. |	No |	None |
+| mailNickname |	string |	The mail alias for the manager. |	No |	None |
+| mobilePhone |	string |	The primary cellular telephone number for the manager. |	No |	None |
+| officeLocation |	string |	The office location in the manager's place of business.	| No |	None |
+| onPremisesImmutableId	string |	This property is used to associate an on-premises Active Directory user account to their Azure AD user object. |	No |	None |
+| onPremisesLastSyncDateTime |	datetime |	Indicates the last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-001T00:00:00Z'.	| No |	None |
+| onPremisesSecurityIdentifier |	string |	Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. |	No |	None |
+| onPremisesSyncEnabled |	boolean |	True if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).	| No |	None |
+| passwordPolicies |	string	| Specifies password policies for the manager. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together. |	No |	None |
+| postalCode	| string |	The postal code for the manager's postal address. The postal code is specific to the manager's country/region. In the United States of America, this attribute contains the ZIP code. |	No | None |
+| preferredLanguage |	string |	The preferred language for the manager. Should follow ISO 639-1 Code; for example "en-US". |	No |	None |
+| provisionedPlans |	string |	The plans that are provisioned for the manager. Read-only. Not nullable. Format: ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>>. |	No	| None |
+| proxyAddresses |	string | The proxy for the manager's address.	Format: ARRAY<STRING>. |	No |	None |
+| state |	string |	The state or province in the manager's address. |	No |	None |
+| streetAddress |	string |	The street address of the manager's place of business. |	No |	None |
+| surname |	string |	The manager's surname (family name or last name). |	No |	None |
+| usageLocation |	string |	A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. Examples include: "US", "JP", and "GB". Not nullable. |	No |	None |
+| userPrincipalName |	string |	The user principal name (UPN) of the manager. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. |	No |	None |
+| userType |	string |	A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. |	No |	None |
+| puser |	string |	User id.	| No | None |
+| ptenant | string | Tenant id.	| No  | None |
+| pAdditionalInfo	| string |	Additional information.	 | No | None |
+| datarow	| int64 |	Row of the data. |	No | None |
+| userrow	| int64	| Row of the user's data. |	No | None |
+| pagerow	| int64	| Page row of the user's data. |	No  |	None |
+| rowinformation |	string |  Page row of the user's data. <br> *Format:* ARRAY<STRING>. |	No |  None |
+
+## JSON representation
+
+```json
+{
+  "accountEnabled": true, 
+  "ageGroup": "String", 
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}], 
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}], 
+  "businessPhones": ["String"], 
+  "city": "String",  
+  "companyName": "String",  
+  "consentProvidedForMinor": "String",
+  "country": "String", 
+  "createdDateTime": "String (timestamp)", 
+  "department": "String",
+  "displayName": "String",
+  "givenName": "String", 
+  "id": "String (identifier)",
+  "imAddresses": ["String"],
+  "jobTitle": "String", 
+  "legalAgeGroupClassification": "String",
+  "mail": "String",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "officeLocation": "String",
+  "onPremisesImmutableId": "String",
+  "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesSecurityIdentifier": "String", 
+  "onPremisesSyncEnabled": true,
+  "passwordPolicies": "String",
+  "postalCode": "String",   
+  "preferredLanguage": "String",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}], 
+  "proxyAddresses": ["String"],
+  "state": "String", 
+  "streetAddress": "String", 
+  "surname": "String", 
+  "usageLocation": "String",   
+  "userPrincipalName": "String", 
+  "userType": "String", 
+  "puser": "String (identifier)", 
+  "ptenant": "String (identifier)", 
+  "pAdditionalInfo": "String", 
+  "datarow": Int64, 
+  "userrow": Int64, 
+  "pagerow": Int64, 
+  "rowinformation": ["String"]
+}
+```
+
+## Sample 
+
+[Manager_v0_sample](https://microsoftapc-my.sharepoint.com/:w:/g/personal/karannilakhe_microsoft_com/EWTGgZYdwI5CnnM4R9XlJVgBSngIYjisopvQlPBy8JcReQ?e=gkjjvs)
