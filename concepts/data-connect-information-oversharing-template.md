@@ -1,5 +1,5 @@
 ---
-title: "Conversation Lineage template"
+title: "Information Oversharing"
 description: "Validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent."
 author: "rimisra2"
 ms.localizationpriority: high
