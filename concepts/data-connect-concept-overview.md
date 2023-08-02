@@ -15,8 +15,7 @@ While the potential this data holds is powerful, organizations must first unlock
 
 To access your Microsoft 365 data in the Microsoft Graph for enterprise analytics, you can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph), a secure, scalable solution that enables you to access relevant Microsoft 365 datasets incuded in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
-The following image shows some of the enterprise analytics scenarios that are possible: 
-
+Here are some of the enterprise analytics scenarios that are possible: 
 
 ![An image that shows some of the enterprise analytics scenarios that are possible.](images/data_connect_msdc_solution.png)
 
@@ -34,7 +33,8 @@ Learn more for the full list of datasets we offer at Microsoft Graph Data Connec
 
 ![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-continuing-growth.png)
 
-
+<!--- Update image above with more current one per Rishi
+-->
 Microsoft 365 datasets come ready for analysis. You can have data delivered in the following categories:  
 
 - **Basic datasets:** Datasets generated from raw customer created content and inputs from Microsoft 365 applications and services. 
@@ -49,7 +49,7 @@ Microsoft 365 datasets come ready for analysis. You can have data delivered in t
   - **Data analysts** identify trends, patterns, and insights. They analyze Microsoft 365 data from Microsoft Graph Data Connect data and create reports to make informed decisions. They may also be responsible for creating dashboards and visualizations to communicate their findings. 
   - **Data scientists** build highly accurate, predictive models and algorithms based on the petabytes of available Microsoft 365 data from Microsoft Graph Data Connect. They use machine learning to analyze data and make predictions about future outcomes.
 
-## Getting started 
+## Get started 
 
 Getting started with Microsoft Graph Data Connect is easy! 
 
@@ -76,6 +76,12 @@ And congratulations, you’re all ready to go!
 
 Learn more about features with Microsoft Graph Data Connect: [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/)
 
+## Accelerate time to insights
+
+Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate the path to realizing the value of the M365 data. Learn more about [Microsoft Graph Data Connect templates](/graph/data-connect-templates-overview):
+
+Templates help take use cases from hypothesis to implementation in four steps:
+
 1. Aggregate and analyze large volumes of data within minutes.
 2. Simplify development workflows to rapidly and easily build, test, and iterate.
 3. Automate processes to reduce the need for time-consuming, manual processes.
@@ -90,7 +96,7 @@ Learn more about features with Microsoft Graph Data Connect: [Scale access to Mi
 2. Minimize compliance management overhead by specified detailed compliance policies for applications and users.
 3. Follow the industry standard for data privacy and confidentially, with support for critical data protection regulations such as GDPR and HIPAA.
 
-Learn about our security, privacy and governance overview: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
+Learn about our security, governance, and privacy: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
 
 <!--- Read our detailed e-book about our out-of-the box capabilities: MGDC governance, security, privacy eBook_VFinal.pdf (link provided is SharePoint restricted)
 -->
@@ -117,7 +123,6 @@ Here are the services that are now available:
 - Microsoft 365 Data + [Microsoft Viva Insights](https://www.microsoft.com/microsoft-viva/insights)
 - Microsoft 365 Data + [Microsoft Syntex](https://www.microsoft.com/microsoft-syntex)
 
-
 ## Microsoft Graph Data Connect customer and partner stories
 
 **Customers.** Read about how Microsoft Graph Data Connect customers build enterprise analytics to empower their organizations.
@@ -126,7 +131,7 @@ Here are the services that are now available:
 | ----------- | ----------- |
 | ![An image that shows a customer logo for JLL.](images/data_connect_logo_jll.png)   | **JLL:** Learn more about how JLL gives their sales teams a holistic view of client relationships: [Microsoft Customer Story-JLL gives sales teams a holistic view of client relationships with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1640464050423914642-jll-professional-services-microsoft-graph-data_connect) |
 | ![An image that shows a customer logo for Politecnico di Milano.](images/data_connect_logo_politecnico.jpg) | **Politecnico di Milano:** Learn more about how universities use Microsoft Graph Data Connect to research actionable workforce sentiment insights: [Microsoft Customer Story-Politecnico di Milano delivers actionable workforce sentiment insights with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1635023177515744184-politecnico-di-milano-higher-education-microsoft-graph-data_connect) |
-| ![An image that shows a customer logo for Sura.](images/data_connect_logo_sura.jpg)   | **Sura:** Companies like Sura are using Microsoft Graph Data Connect to help businesses reduce strategic human resources risk: [Microsoft Customer Story-Seguros SURA Latinoamérica to help businesses reduce strategic human resources risk with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1602468095350437521-suramericana-insurance-microsoft365) |
+| ![An image that shows a customer logo for Sura.](images/data_connect_logo_sura.jpg)   | **Sura:** Companies like Sura are using Microsoft Graph Data Connect to help businesses reduce human resources risk: [Microsoft Customer Story-Seguros SURA Latinoamérica to help businesses reduce strategic human resources risk with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1602468095350437521-suramericana-insurance-microsoft365) |
 | ![An image that shows a customer logo for G&J Pepsi-Cola Bottlers.](images/data_connect_logo_gjpepsi.png)   | **G&J Pepsi-Cola Bottlers:** Learn more about Pepsi as they reflect on overcoming ransomware attacks and offer insights from the other side: [Microsoft Customer Story-G&J Pepsi reflects on overcoming a ransomware attack, offers insights from the other side](https://customers.microsoft.com/story/1548796714270598782-gjpepsi-consumer-goods-microsoft-security-solutions) |
 
 
