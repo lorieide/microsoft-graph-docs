@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Graph Data Connect policies and billing"
+title: "MSkills Finder and Talent Alignment"
 description: "Allows engagement managers to build the best suited teams for projects."
 author: "rimisra2"
 ms.localizationpriority: high
