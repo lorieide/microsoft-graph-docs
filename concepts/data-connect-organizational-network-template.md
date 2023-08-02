@@ -1,10 +1,12 @@
 ---
-title: "Microsoft Graph Data Connect policies and billing"
-description: "Enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within."
+title: "Template: Organizational Network"
+description: "Harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
+
+# Organizational Network template
 
 The purpose of ONA (Organizational Network Analysis) is to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change. This solution template enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within. 
 
