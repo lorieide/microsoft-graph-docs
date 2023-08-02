@@ -1,5 +1,5 @@
 ---
-title: "Templates of Microsoft Graph Data Connect"
+title: "Templates Overview"
 description: "Get pre-built templates using Microsoft Graph Data Connect."
 author: "gladysa"
 ms.localizationpriority: high
