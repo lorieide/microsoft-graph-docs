@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Skills finder and talent alignment template 
 
-The Skills finder and talent alignment application is a Microsoft Graph Data Connect based solution enabling engagement managers to build the best suited teams for projects. Use this template to find employees that are available, have the best set of skills for the project, as well as the most relevant set of potential skills. 
+The Skills finder and talent alignment application is a Microsoft Graph Data Connect-based solution that engagement managers can use to build teams that are best suited for projects. Use this template to find employees that are available and have the best set of skills for the project, as well as the most relevant set of potential skills. 
  
 The application processes employee profile and email data from Microsoft Graph Data Connect and complementary data sources, using Azure Data Factory (ADF). It uses this data to build a model based on which, given queries containing desired skills or topics of interest, the most relevant employees are recommended. For each employee, information from their profile is provided, along with inferred information about their potential skills, topics of interest or roles. 
 
@@ -34,7 +34,7 @@ The application's search rules are also highly customizable, allowing users to t
 
 - Employee profiles (derived from the systems used in the HR department). 
 
-## PowerBI Dashboard 
+## Power BI dashboard 
 
 **Searching for relevant employees**
 
