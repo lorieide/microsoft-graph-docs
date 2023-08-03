@@ -25,13 +25,13 @@ This template enables you to create a Relationship Mesh solution that shows how 
 - Outlook emails **(BasicDataSet_v0.Message_v1)** 
 - Outlook calendar events **(BasicDataSet_v0.CalendarView_v0)** 
 
-## CRM data:  
+## CRM data  
 - Contacts 
 - Accounts 
 - Opportunities  
 - Employees 
 
-## PowerBI dashboards 
+## Power BI dashboards 
 With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication, and meeting data. This dashboard shows you a summary of all high priority accounts and their connectivity scores. The dashboard also includes accounts that need attention, accounts in good standing, and the shortest and longest gaps since the last activity.
 
 ![An image that shows the relationship mesh intro dashboard](images/data-connect-templates-mesh-intro.png)
