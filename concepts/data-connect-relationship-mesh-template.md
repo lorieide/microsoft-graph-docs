@@ -26,7 +26,7 @@ This template enables you to create a Relationship Mesh solution that shows how 
 - Outlook Calendar **(BasicDataSet_v0.CalendarView_v0)** 
 
 
-## Customer relationship management data:  
+## Customer relationship management (CRM) data 
 - Contacts 
 - Accounts 
 - Opportunities  
