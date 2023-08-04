@@ -45,9 +45,7 @@ Microsoft 365 datasets come ready for analysis. You can have data delivered in t
 
 - **LOB business leaders** need actionable insights from Microsoft 365 data because it helps them make informed decisions regarding their organization. By analyzing data, they can identify patterns and trends including customer relationship analytics, business process analytics, security and compliance analytics, and people productivity analytics.
 - **Data engineers** collect, process, and transform Microsoft 365 data from Microsoft Graph Data Connect into a format that is usable by data scientists and analysts. They construct and manage Microsoft 365 data pipelines as data combined across other data sources in Microsoft Fabric, all while ensuring the highest levels of data quality and consistency. 
-- **Data scientists** and data analysts play a critical role in helping LOB business leaders make sense of their data and use it to drive business decisions.
-  - **Data analysts** identify trends, patterns, and insights. They analyze Microsoft 365 data from Microsoft Graph Data Connect data and create reports to make informed decisions. They may also be responsible for creating dashboards and visualizations to communicate their findings. 
-  - **Data scientists** build highly accurate, predictive models and algorithms based on the petabytes of available Microsoft 365 data from Microsoft Graph Data Connect. They use machine learning to analyze data and make predictions about future outcomes.
+- **Data scientists** and **data analysts** play a critical role in helping LOB business leaders make sense of their data and use it to drive business decisions. Data analysts identify trends, patterns, and insights. They analyze Microsoft 365 data from Data Connect data and create reports to make informed decisions. They may also be responsible for creating dashboards and visualizations to communicate their findings. Data scientists build highly accurate, predictive models and algorithms based on the petabytes of available Microsoft 365 data from Data Connect. They use machine learning to analyze data and make predictions about future outcomes.
 
 ## Get started 
 
