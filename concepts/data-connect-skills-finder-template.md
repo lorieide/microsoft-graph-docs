@@ -14,6 +14,10 @@ The application processes employee profile and email data from Data Connect and 
 
 The application's search rules are highly customizable, allowing users to tailor configurations regarding data sources, filters, and search criteria, to best suit their needs. 
 
+## GitHub tutorial
+
+The [Skills Finder and Talent Alignment GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/projectstaffing) helps organizations build the best suited teams for projects, by identifying employees who are available and have the best set of skills for a project, as well as the most relevant set of potential skills.
+
 ## Key use cases 
 - Locate subject matter expertise to form teams with the right mix of skills and availability.  
 - Enrich Human Resources (HR) data with Microsoft 365 to get insights about skill, capability level, and talent portfolio.  
