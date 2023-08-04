@@ -14,7 +14,7 @@ This template teaches you the key steps and Azure technologies required to build
 
 ## GitHub tutorial
 
-The [Conversational Lineage GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/conversation-lineage) provides you with an example of using Data Connect to gain insights into an organization's communication patterns by analyzing Microsoft 365 data.
+The [Conversational Lineage GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/conversation-lineage) helps organizations gain insights into internal communication patterns by analyzing Microsoft 365 data.
 
 ## Key use cases 
 - Integrate Microsoft 365 email conversations with CRM or ticketing information to create a single view with customer sentiment analysis.  
