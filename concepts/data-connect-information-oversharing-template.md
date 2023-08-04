@@ -1,19 +1,19 @@
 ---
-title: "Template: Information Oversharing"
-description: "Validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent."
+title: "Microsoft Graph Data Connect Information Oversharing template"
+description: "Use this template to determine whether sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Information Oversharing template 
+# Microsoft Graph Data Connect Information Oversharing template
 
 Information oversharing is a security and compliance use case powered by our newly available SharePoint datasets. This template helps you validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent. 
 
 ## Key use cases 
 - Monitor the sharing landscape and craft customer tenant policies.  
 - Protect confidential client data, maintain constant compliance.  
-- Scale your maching learning (ML) model with the increased volume of email data.  
+- Scale your machine learning model with the increased volume of email data.  
 - Understand risky behaviors and usage and promote employee behaviors.  
 - Create monthly tenant policy adoption reports and month over month sharing trends reports.  
 - Identify malicious actors and protect confidential data.  
@@ -23,7 +23,7 @@ Information oversharing is a security and compliance use case powered by our new
 - Establish new rules based on how sensitive data is managed and classified. 
  
 
-## MGDC data sets  
+## Microsoft Graph Data Connect data sets  
 - Microsoft groups **(BasicDataSet_v0.GroupMembers_v0)** 
 - Microsoft groups **(BasicDataSet_v0.GroupDetails_v0)** 
 - Microsoft groups **(BasicDataSet_v0.GroupOwners_v0)** 
@@ -31,7 +31,7 @@ Information oversharing is a security and compliance use case powered by our new
 - OneDrive and SharePoint Online **(SharePointSitesDataset_v0_Preview)**
 - OneDrive and SharePoint Online **(SharePointGroupsDataset_v0_Preview)**
 
-## PowerBI dashboard 
+## Power BI dashboard 
 
 **Sharing details**  
 ![An image that shows the sharing details of the oversharing dashboard](images/data-connect-templates-oversharing-sharing.png)
