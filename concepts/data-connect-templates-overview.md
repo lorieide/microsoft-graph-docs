@@ -18,7 +18,7 @@ You can build different types of data visualizations by using one the following 
 
 ### Customer relationships  
 
-Use the [Conversation Lineage](/data-connect-conversation-lineage-template) and [Relationship Mesh](/data-connect-relationship-mesh-lineage-template) templates to identify collaboration and communication patterns that are key for organizations to achieve real business agility. 
+Use the [Conversation Lineage](data-connect-conversation-lineage-template.md) and [Relationship Mesh](data-connect-relationship-mesh-lineage-template.md) templates to identify collaboration and communication patterns that are key for organizations to achieve real business agility. 
 
 - Eliminate client frustration with personalized online engagement.
 - Outsmart your competition using coverage strategies based on predictive models. 
@@ -27,7 +27,7 @@ Use the [Conversation Lineage](/data-connect-conversation-lineage-template) and 
  
 ### Business processes  
 
-Use the [Skills Finder and Talent Alignment](/data-connect-skills-finder-template) template to surface Microsoft 365 data so organizations cam address hidden process inefficiencies.  
+Use the [Skills Finder and Talent Alignment](data-connect-skills-finder-template.md) template to surface Microsoft 365 data so organizations cam address hidden process inefficiencies.  
 
 - Uncover and prioritize business processes for automation. 
 - Utilize a data-driven approach to align key talent on teams and projects. 
@@ -36,7 +36,7 @@ Use the [Skills Finder and Talent Alignment](/data-connect-skills-finder-templat
 
 ### People productivity 
 
-Use the [Organizational Network Analysis](/data-connect-organizational-network-template) template to discover the patterns of collaboration and engagement to drive digital, culture and process transformation. Improve visibility of employee engagement, collaboration, and communication.  
+Use the [Organizational Network Analysis](data-connect-organizational-network-template.,md) template to discover the patterns of collaboration and engagement to drive digital, culture and process transformation. Improve visibility of employee engagement, collaboration, and communication.  
 
 - Scale and optimize personalization of employee engagement.  
 - Democratize intelligence and insight across the workforce.  
@@ -45,7 +45,7 @@ Use the [Organizational Network Analysis](/data-connect-organizational-network-t
 
 ### Security and compliance 
 
-Use the [Information Oversharing](/data-connect-information-oversharing-template) template to secure your business by identifying patterns of information oversharing and fraud in your Microsoft 365 data.  
+Use the [Information Oversharing](data-connect-information-oversharing-template.md) template to secure your business by identifying patterns of information oversharing and fraud in your Microsoft 365 data.  
 
 - Uncover false alerts and refocus efforts on genuine threats.  
 - Validate employee intention following questionable activity.  
