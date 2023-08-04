@@ -16,6 +16,10 @@ The purpose of organizational network analysis (ONA) is to harness information f
 - Outlook emails **(BasicDataSet_v0.Message_v1)** 
 - Outlook calendar items **(BasicDataSet_v0.CalendarView_v0)** 
 
+## GitHub tutorial
+
+The [Information Oversharing GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/ona) helps organizations harness information flows and team connectivity to unlock productivity, innovation, employee engagement, and organizational change.
+
 ## Key use cases 
 - Harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change.  
 - Evaluate information flows capturing the betweenness of nodes and their probability to be on the information flow between two people.  
