@@ -11,7 +11,11 @@ ms.prod: "data-connect"
 Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Use this template to gain insights into the strength of relationships with customers and their key contacts will enable your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
 
 This template enables you to create a Relationship Mesh solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
- 
+
+ ## GitHub tutorial
+
+The [Relationship Mesh GitHub resources](https://github.com/microsoft/Relationship-Mesh-Solution-Accelerator-with-MGDC-and-Azure-Synapse-Analytics) helps organizations gain insights about the strength of relationship with customers and their key contacts.
+
 ## Key use cases 
 - Integrate customer/seller relationship data from various systems together into a single view with actionable insights at the area and individual account level.  
 - Minimize customer churn, increase loyalty, and generate more revenue in every account.  
