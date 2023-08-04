@@ -1,16 +1,16 @@
 ---
-title: "Template: Organizational Network"
-description: "Harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change."
+title: "Microsoft Graph Data Connect Organizational Network template"
+description: "Use this template to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Organizational Network template
+# Microsoft Graph Data Connect Organizational Network template
 
-The purpose of ONA (Organizational Network Analysis) is to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change. This solution template enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within. 
+The purpose of organizational network analysis (ONA) is to harness information flows and team connectivity to unlock productivity, innovation, employee engagement and organizational change. This solution template enables customers to leverage ONA metrics from Microsoft 365 data and analyze the networks within. 
 
-## MGDC data sets 
+## Microsoft Graph Data Connect data sets 
 - Azure Active Directory users **(BasicDataSet_v0.User_v1)**
 - Teams chats **(BasicDataSet_v0.TeamChat_v1)** 
 - Outlook emails **(BasicDataSet_v0.Message_v1)** 
@@ -27,7 +27,7 @@ The purpose of ONA (Organizational Network Analysis) is to harness information f
 - Predict business outcomes and analyze trends.  
 - Understand your team's connectivity patterns. 
 
-## PowerBI dashboard 
+## Power BI dashboard 
 
 **Overview page**  
 On the Overview page, you can:
