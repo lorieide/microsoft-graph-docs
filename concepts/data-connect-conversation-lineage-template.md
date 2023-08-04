@@ -1,20 +1,20 @@
 ---
-title: "Template: Conversation Lineage"
-description: "Gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC)."
+title: "Microsoft Graph Data Connect Conversation Lineage template"
+description: "Use this template to gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Conversation Lineage template
+# Microsoft Graph Data Connect Conversation Lineage template
 
-Use the Conversation Lineage template to gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect (MGDC).
+Use the Conversation Lineage template to gain insights into an organization's communication patterns by analyzing Microsoft 365 data with Microsoft Graph Data Connect.
 
-This template teaches you the key steps and Azure technologies required to build your own MGDC-based application. By extracting and processing Microsoft 365 data and runnning analytics using Azure Synapse Analytics, you can process both historical data and future data using Azure Synapse triggers. You can also extract sentiment and Natural Language Processing (NLP) entities from conversations using Azure Cognitive Services, enabling you to visualize key insights with PowerBI. 
+This template teaches you the key steps and Azure technologies required to build your own Data Connect application. By extracting and processing Microsoft 365 data and runnning analytics using Azure Synapse Analytics, you can process both historical data and future data using Azure Synapse triggers. You can also extract sentiment and natural language processing (NLP) entities from conversations using Azure Cognitive Services, and use them to visualize key insights with Power BI. 
 
 ## Key use cases 
 - Integrate Microsoft 365 email conversations with CRM or ticketing information to create a single view with customer sentiment analysis.  
-- Leverage the power of conversation patterns to optimize efficient routing. 
+- Take advantage of the power of conversation patterns to optimize efficient routing. 
 - Craft compelling internal email campaigns with proven results.  
 - Identify and eliminate bad communication practices.
 - Measure changes in an organization’s communication patterns. 
@@ -24,13 +24,13 @@ This template teaches you the key steps and Azure technologies required to build
 - Find the most frequent keywords found in main titles. 
 - Get a view of all your emails sent by each department, your top email senders, the total of emails sent, and the count of emails sent externally. 
 
-## MGDC data sets 
+## Microsoft Graph Data Connect data sets 
 - Azure Active Directory users **(BasicDataSet_v0.User_v1)** 
 - Teams chats **(BasicDataSet_v0.TeamChat_v1)** 
 - Outlook emails **(BasicDataSet_v0.Message_v1)** 
 - Outlook calendar items **(BasicDataSet_v0.CalendarView_v0)** 
 
-## PowerBI dashboards 
+## Power BI dashboards 
 The **Global Conversation Lineage** dashboard shows overall general sentiment, frequent keywords, and interaction type.
 ![An image that shows the global conversation lineage dashboard](images/data-connect-templates-conv-lineage.png)
 
