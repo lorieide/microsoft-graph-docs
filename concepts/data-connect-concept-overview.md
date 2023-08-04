@@ -76,7 +76,7 @@ Learn more about features with Microsoft Graph Data Connect: [Scale access to Mi
 
 ## Accelerate time to insights
 
-Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate the path to realizing the value of the M365 data. Learn more about [Microsoft Graph Data Connect templates](/graph/data-connect-templates-overview):
+Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate the path to realizing the value of the M365 data. Learn more about [Microsoft Graph Data Connect templates](data-connect-templates-overview.md):
 
 Templates help take use cases from hypothesis to implementation in four steps:
 
