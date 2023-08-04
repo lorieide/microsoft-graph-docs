@@ -10,6 +10,10 @@ ms.prod: "data-connect"
 
 Information oversharing is a security and compliance use case powered by our newly available SharePoint datasets. This template helps you validate if sensitive data was mistakenly leaked or if employees intentionally shared confidential information with malicious intent. 
 
+## GitHub tutorial
+
+The [Information Oversharing GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/information-oversharing) helps organizations analyze how secure their SharePoint sites are, maintain information boundaries, and establish new rules based on how sensitive data is managed and classified.
+
 ## Key use cases 
 - Monitor the sharing landscape and craft customer tenant policies.  
 - Protect confidential client data, maintain constant compliance.  
