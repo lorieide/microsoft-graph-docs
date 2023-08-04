@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Building strong relationships with customers is especially important to improve customer retention, loyalty, and revenue. Use this template to gain insights into the strength of relationships with customers and their key contacts will enable your teams to take required actions to manage and improve the interactions at various stages in a customer engagement life cycle. 
 
-This template enables you to create a Relationship Mesh solution that shows how well your sales team is connected to your key accounts and how they interact with each contact at each account. 
+You can use Microsoft Graph Data Connect to build solutions to help you manage and improve interactions at various stages in a customer engagement life cycle. 
 
  ## GitHub tutorial
 
