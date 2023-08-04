@@ -12,6 +12,10 @@ Use the Conversation Lineage template to gain insights into an organization's co
 
 This template teaches you the key steps and Azure technologies required to build your own Data Connect application. By extracting and processing Microsoft 365 data and runnning analytics using Azure Synapse Analytics, you can process both historical data and future data using Azure Synapse triggers. You can also extract sentiment and natural language processing (NLP) entities from conversations using Azure Cognitive Services, and use them to visualize key insights with Power BI. 
 
+## GitHub tutorial
+
+The [Conversational Lineage GitHub resources](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/conversation-lineage) provides you with an example of using Data Connect to gain insights into an organization's communication patterns by analyzing Microsoft 365 data.
+
 ## Key use cases 
 - Integrate Microsoft 365 email conversations with CRM or ticketing information to create a single view with customer sentiment analysis.  
 - Take advantage of the power of conversation patterns to optimize efficient routing. 
