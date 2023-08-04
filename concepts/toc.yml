@@ -159,16 +159,16 @@ items:
             items:
               - name: Templates overview
                 href: data-connect-templates-overview.md
-              - name: Conversation Lineage
-                href: data-connect-conversation-lineage-template.md
               - name: Information Oversharing
                 href: data-connect-information-oversharing-template.md
               - name: Organizational Network Analysis
                 href: data-connect-organizational-network-template.md
-              - name: Skills Finder and Talent Alignment
-                href: data-connect-skills-finder-template.md
               - name: Relationship Mesh 
                 href: data-connect-relationship-mesh-template.md
+              - name: Conversation Lineage
+                href: data-connect-conversation-lineage-template.md
+              - name: Skills Finder and Talent Alignment
+                href: data-connect-skills-finder-template.md
           - name: Policies and billing
             href: data-connect-policies.md
           - name: User selection and filtering
