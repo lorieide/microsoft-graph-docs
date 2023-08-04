@@ -1,16 +1,17 @@
 ---
-title: "Template: Skills Finder and Talent Alignment"
-description: "Allows engagement managers to build the best suited teams for projects."
+title: "Microsoft Graph Data Connect Skills Finder and Talent Alignment template"
+description: "Use this template to enable engagement managers to build the best suited teams for projects."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Skills Finder and Talent Alignment Template
+# Microsoft Graph Data Connect Skills Finder and Talent Alignment template
 
-The Skills Finder and Talent Alignment application is a Microsoft Graph Data Connect (MGDC) based solution that allows engagement managers to build the best suited teams for projects, by finding employees that are available who have the best set of skills for the project, as well as the most relevant set of potential skills. 
+The Skills Finder and Talent Alignment application is a Microsoft Graph Data Connect solution that enables engagement managers to build the best suited teams for projects. Use this template to identify employees who are available who have the best set of skills for the project, as well as the most relevant set of potential skills. 
  
-The application processes employee profile and email data from Microsoft Graph Data Connect and complementary data sources using Azure Data Factory (ADF). It uses this data to build a model based on given queries that contain desired skills or topics of interest, as the most relevant employees are recommended. For each employee, the template provides information from employee profiles, along with inferred information about employees' potential skills, topics of interest, and roles. 
+The application processes employee profile and email data from Data Connect and complementary data sources using Azure Data Factory (ADF). It uses this data to build a model based on given queries that contain desired skills or topics of interest, as the most relevant employees are recommended. For each employee, the template provides information from employee profiles, along with inferred information about employees' potential skills, topics of interest, and roles. 
+
 The application's search rules are highly customizable, allowing users to tailor configurations regarding data sources, filters, and search criteria, to best suit their needs. 
 
 ## Key use cases 
@@ -24,35 +25,35 @@ The application's search rules are highly customizable, allowing users to tailor
 - Provide job opportunities with great skill fit to boost employee satisfaction and retention. 
 - Define new teams (creating, adding members, removing members, and exporting team members). 
 
-## MGDC data sets 
+## Microsoft Graph Data Connect data sets 
 - Azure Active Directory users **(BasicDataSet_v0.User_v1)**
 - Azure Active Directory managers **(BasicDataSet_v0.Managers)**
 - Outlook Emails **(BasicDataSet_v0.Message_v1)** 
 
-## Human Resources data:  
+## Human resources data:  
 
 - Employee profiles (derived from the systems used in the HR department). 
 
-## PowerBI dashboard 
+## Power BI dashboard 
 
-**Searching for relevant employees**
+**Search for relevant employees**
 
 Users can search for employees best matching a provided list of search terms. The terms represent skills, responsibilities, technologies, and so on that have been matched or inferred for each employee, based on the provided data sources. 
 
 An example of how a search is performed from the application UI is shown in the image below: 
 ![An image that shows the talent pool of the skills finder template](images/data-connect-templates-skills-pool.png)
 
-**Searching by availability only** 
+**Search by availability only** 
 
 Users can search for employees without providing any search terms, by setting the availability filter only. By clicking the *Available At* field in the filters section, a calendar view appears. Then users can select the date, starting from which recommended employees must be available. The results are sorted by availability in ascending order (those available are effective immediately first). For identical dates, the results are also sorted alphabetically by name. 
 An example of how a search is performed from the application UI is shown in the image below: 
 ![An image that shows how to search employees by availability](images/data-connect-templates-skills-talent.png)
 
-**Searching by skills and availability** 
+**Search by skills and availability** 
 Users can search for relevant employees and use the availability filter at the same time. In the recommendations list, all the employees have the availability date before or on the date set in the availability filter. This is easier to see when sorting the recommendations by availability. 
 ![An image that shows how to search employees by skills and availability](images/data-connect-templates-skills-searching.png)
 
-**Searching by name** 
+**Search by name** 
 The application also gives the option of searching by name. The name does not have to be complete. Users can search by first name, middle name, last name, full name, and so on.
 ![An image that shows how to search employees by name](images/data-connect-templates-skills-name.png)
 
@@ -94,7 +95,7 @@ As a user begins writing search terms in the search bar, the application display
 This happens after a short delay from the last keystroke, until the current term is submitted by pressing "Enter". For certain suggested words, the application can also display a list of related term suggestions, as shown in the image below. 
 ![An image that shows how to search using the autocomplete option and suggestions](images/data-connect-templates-skills-autocomplete.png)
 
-**Using search domains for skills inference and search results matching**
+**Use search domains for skills inference and search results matching**
 
 The application supports searching in multiple domains, e.g., Software Engineering, Data Science, Healthcare, Oil and Gas, and so on. The search operation has the option of enabling only the domains that are of interest to the user. The inferred skills differ depending on which domains are enabled. 
 
@@ -104,32 +105,32 @@ For example, if a user searches using the term sensor with the 'Healthcare' doma
 If a user does the same search, but this time with the 'Software Engineering' domain enabled, the skills inferred differ as shown in the image below. 
 ![An image that shows the search differences using domain options](images/data-connect-templates-skills-differ.png)
 
-**Exporting search results**
+**Export search results**
 
 A user can explort the results of a search operation into a file with Excel or CSV format. To do this, the user must click on the highlighted *Export* link right under the search bar, as shown in the image below. Afterwards, a pop-up appears showing how to configure the file name, format, and number of results to export. Only the results pages retrieved so far are then exported as shown in the image below. 
 ![An image that shows how to export employee search results](images/data-connect-templates-skills-exporting.png)
 
-**Defining teams** 
+**Define teams** 
 
 To view the team features, click the icon to the right of the *Search* button, as shown in the image below. 
 ![An image that shows how to define teams](images/data-connect-templates-skills-teams.png)
 
-**Creating a team** 
+**Create a team** 
 
 To create a new team, click the *Create team* button. A pop-up appears, enabling the user to add the name and description of the team, as shown in the image below. 
 ![An image that shows how to create teams](images/data-connect-templates-skills-creating-teams.png)
 
-**Adding members to the team** 
+**Add members to the team** 
 
 To add an employee to the team, hover over the wanted employee from the list of employees. A plus button appears on the right side of the employee record. Click the plus button, as shown in the image below. 
 ![An image that shows how to add members to a team](images/data-connect-templates-skills-adding-members.png)
 
-**Removing members from the team** 
+**Remove members from the team** 
 
 To remove an employee from the team, hover over the wanted employee from the list of team members. A button marked with an *X* appears on the right side of the employee description. Click the button, as shown in the image below. 
 ![An image that shows how to remove members from a team](images/data-connect-templates-skills-removing-members.png)
 
-**Exporting team members** 
+**Export team members** 
 
 Users can export team members into an Excel or CSV file. To do this, users must click the *Export* button at the bottom of the team members list. A pop-up appears, enabling the users to configure the name and format of the file, as shown in the image below. 
 ![An image that shows how to export team members](images/data-connect-templates-skills-exporting-members.png)
