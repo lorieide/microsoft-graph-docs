@@ -30,6 +30,7 @@ The [Skills Finder and Talent Alignment GitHub resources](https://github.com/mic
 - Define new teams (creating, adding members, removing members, and exporting team members). 
 
 ## Microsoft Graph Data Connect data sets 
+
 - Azure Active Directory users **(BasicDataSet_v0.User_v1)**
 - Azure Active Directory managers **(BasicDataSet_v0.Managers)**
 - Outlook Emails **(BasicDataSet_v0.Message_v1)** 
@@ -137,4 +138,5 @@ To remove an employee from the team, hover over the wanted employee from the lis
 **Export team members** 
 
 Users can export team members into an Excel or CSV file. To do this, users must click the *Export* button at the bottom of the team members list. A pop-up appears, enabling the users to configure the name and format of the file, as shown in the image below. 
+
 ![An image that shows how to export team members](images/data-connect-templates-skills-exporting-members.png)

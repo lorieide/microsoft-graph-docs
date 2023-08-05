@@ -31,6 +31,7 @@ The [Relationship Mesh GitHub resources](https://github.com/microsoft/Relationsh
 
 
 ## Customer relationship management (CRM) data 
+
 - Contacts 
 - Accounts 
 - Opportunities  
@@ -40,8 +41,7 @@ The [Relationship Mesh GitHub resources](https://github.com/microsoft/Relationsh
 ## Power BI Dashboards 
 With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication and meeting data. This dashboard shows you a summary of all high priority accounts, their connectivity scores, it includes the accounts that need attention, the accounts in good standing and the shortest and longest gap since the last activity.
 
-With the prepackaged business logic, you can calculate connectivity scores between your sellers and customer contacts based on CRM, email communication and meeting data. This dashboard shows you a summary of all high priority accounts, their connectivity scores, it includes the accounts that need attention, the accounts in good standing and the shortest and longest gap since the last activity.
 ![An image that shows the relationship mesh intro dashboard](images/data-connect-templates-mesh-intro.png)
 
-The **detail dashboard** includes actionable insights both at organizational level and at an individual account level, you can refine your search by the industries, sectors, sellers, tiers and transaction size, it will show you the network of sellers and external contacts, the top contacts at an account, the top relationship touchpoints , the interactions, an event tracker and the list of prospecting checklist. 
+The **Detail dashboard** includes actionable insights both at organizational level and at an individual account level, so you can refine your search by industries, sectors, sellers, tiers and transaction size. The dashboard also shows the network of sellers and external contacts, the top contacts at an account, the top relationship touchpoints, the interactions, an event tracker, and the list of prospecting checklist. 
 ![An image that shows the relationship mesh detail accounts dashboard](images/data-connect-templates-mesh-account.png)
