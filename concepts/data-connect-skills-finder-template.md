@@ -1,11 +1,17 @@
-# Skills finder and Talent Alignment Template 
+---
+title: "Skills finder and talent alignment template"
+description: "Learn how to use Microsoft Graph Data Connect to enable engagement managers to build the best suited teams for projects."
+author: "rimisra2"
+ms.localizationpriority: high
+ms.prod: "data-connect"
+---
 
-[Get Started](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions/projectstaffing)
- 
-## Business Summary 
-The Skills finder and talent alignment application is a Microsoft Graph Data Connect (MGDC) based solution which allows engagement managers to build the best suited teams for projects, by finding employees that are available and have the best set of skills for the project, as well as the most relevant set of potential skills. 
+# Skills finder and talent alignment template 
+
+The Skills finder and talent alignment application is a Microsoft Graph Data Connect-based solution that engagement managers can use to build teams that are best suited for projects. Use this template to find employees that are available and have the best set of skills for the project, as well as the most relevant set of potential skills. 
  
 The application processes employee profile and email data from Microsoft Graph Data Connect and complementary data sources, using Azure Data Factory (ADF). It uses this data to build a model based on which, given queries containing desired skills or topics of interest, the most relevant employees are recommended. For each employee, information from their profile is provided, along with inferred information about their potential skills, topics of interest or roles. 
+
 The application's search rules are also highly customizable, allowing users to tailor configurations regarding data sources, filters, and search criteria, to best suit their needs. 
 
 ## Key use cases 
@@ -19,7 +25,7 @@ The application's search rules are also highly customizable, allowing users to t
 - Provide job opportunities with great skill fit to boost employee satisfaction and retention. 
 - Define new teams (creating, adding members, removing members, and exporting team members. 
 
-## MGDC data sets 
+## Microsoft Graph Data Connect data sets 
 - Azure Active Directory Users **(BasicDataSet_v0.User_v1)**
 - Azure Active Directory Managers **(BasicDataSet_v0.Managers)**
 - Outlook Emails **(BasicDataSet_v0.Message_v1)** 
@@ -28,7 +34,7 @@ The application's search rules are also highly customizable, allowing users to t
 
 - Employee profiles (derived from the systems used in the HR department). 
 
-## PowerBI Dashboard 
+## Power BI dashboard 
 
 **Searching for relevant employees**
 
